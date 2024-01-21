@@ -1,0 +1,42 @@
+{
+	"dependencies": {
+		"@mdhnpm/rgb-hex-converter": "^1.0.3",
+		"@types/axios": "^0.14.0",
+		"axios": "^0.24.0",
+		"discord.js": "^13.3.0",
+		"dotenv": "^16.0.0",
+		"fs": "^0.0.1-security",
+		"mongoose": "^6.0.13",
+		"redis": "^3.1.2",
+		"resize-img": "^2.0.0",
+		"shortid": "^2.2.16"
+	},
+	"name": "Yandere-V2",
+	"version": "1.0.0",
+	"description": "Yandere Kitsune bot for Sashimi Discord Server at discord.gg/sashimi",
+	"main": "index.ts",
+	"scripts": {
+		"start": "tsc && node ./build/index.js",
+		"start-ts": "ts-node index.ts",
+		"build": "tsc",
+		"dev": "nodemon --exec node ./build/index.js"
+	},
+	"keywords": [
+		"discord",
+		"bot",
+		"discordjs",
+		"typescript",
+		"nodejs"
+	],
+	"author": "Grant (grantscart )",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/events": "^3.0.0",
+		"@types/redis": "^2.8.32",
+		"@types/resize-img": "^2.0.1",
+		"@types/shortid": "^0.0.29",
+		"nodemon": "^2.0.15",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.4"
+	}
+}

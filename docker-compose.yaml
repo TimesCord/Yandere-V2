@@ -1,0 +1,13 @@
+version: '3'
+services:
+  bot:
+    container_name: yanderev2
+    build: .
+    depends_on:
+      - db
+    restart: unless-stopped
+  db:
+    container_name: redis
+    image: redis:alpine
+    ports:
+      - 6379:6379
